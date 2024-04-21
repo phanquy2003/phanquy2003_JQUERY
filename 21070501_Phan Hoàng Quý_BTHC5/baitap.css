@@ -1,0 +1,54 @@
+nav {
+    background: rgb(143, 227, 98);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex; 
+    justify-content: center;
+    border-radius: 10px; 
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: rgb(23, 11, 11);
+    text-decoration: none;
+  
+}
+
+nav ul li:hover {
+    background-color: rgb(98, 188, 227);
+}
+
+nav ul li:hover > ul.sub-menu {
+    display: block;
+}
+
+nav ul li ul.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(98, 227, 139, 0.652);
+    padding: 10px 0;
+}
+
+nav ul li ul.sub-menu li {
+    display: block;
+}
+
+nav ul li ul.sub-menu li a {
+    padding: 8px 20px;
+}
